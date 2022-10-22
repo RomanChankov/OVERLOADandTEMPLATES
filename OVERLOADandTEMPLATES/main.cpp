@@ -1,4 +1,4 @@
-#include<iostream>
+ï»¿#include<iostream>
 //#include<ctime>
 using namespace std;
 void Fillrand(int arr[], const int n);
@@ -17,22 +17,22 @@ void main()
 	//srand(time(NULL));
 	const int n = 5;
 	int arr[n];
-	cout << "Ìàññèâ " << endl;
+	cout << "ÐœÐ°ÑÑÐ¸Ð² " << endl;
 	cout << endl;
 	Fillrand(arr, n);
 	Print(arr, n);
-	cout << "Ñóììà ýëåìåíòîâ ìàññèâà:   " << Sum(arr, n) << endl;
-	cout << "Ñðåäíåå çíà÷åíèå ýëåìåíòîâ ìàñèâà:  " << Avg(arr, n) << endl;
-	cout << "Ìèíèìàëüíîå çíà÷åíèå ýëåìåíòîâ ìàñèâà:  " << MinValue(arr, n) << endl;
-	cout << "Ìàêñèìàëüíîå çíà÷åíèå ýëåìåíòîâ ìàñèâà:  " << MaxValue(arr, n) << endl;
-	cout << "Ñîðòèðîâêà ìàññèâà ïî âîçðàñòàíèþ" << endl;
+	cout << "Ð¡ÑƒÐ¼Ð¼Ð° ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð² Ð¼Ð°ÑÑÐ¸Ð²Ð°:   " << Sum(arr, n) << endl;
+	cout << "Ð¡Ñ€ÐµÐ´Ð½ÐµÐµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð² Ð¼Ð°ÑÐ¸Ð²Ð°:  " << Avg(arr, n) << endl;
+	cout << "ÐœÐ¸Ð½Ð¸Ð¼Ð°Ð»ÑŒÐ½Ð¾Ðµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð² Ð¼Ð°ÑÐ¸Ð²Ð°:  " << MinValue(arr, n) << endl;
+	cout << "ÐœÐ°ÐºÑÐ¸Ð¼Ð°Ð»ÑŒÐ½Ð¾Ðµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð² Ð¼Ð°ÑÐ¸Ð²Ð°:  " << MaxValue(arr, n) << endl;
+	cout << "Ð¡Ð¾Ñ€Ñ‚Ð¸Ñ€Ð¾Ð²ÐºÐ° Ð¼Ð°ÑÑÐ¸Ð²Ð° Ð¿Ð¾ Ð²Ð¾Ð·Ñ€Ð°ÑÑ‚Ð°Ð½Ð¸ÑŽ" << endl;
 	Sort(arr, n);
 	Print(arr, n);
 	int number_of_shifts;
-	cout << "Ââåäèòå êîë-âî ñäâèãîâ â ëåâî: "; cin >> number_of_shifts;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐºÐ¾Ð»-Ð²Ð¾ ÑÐ´Ð²Ð¸Ð³Ð¾Ð² Ð² Ð»ÐµÐ²Ð¾: "; cin >> number_of_shifts;
 	ShiftLeft(arr, n, number_of_shifts);
 	Print(arr, n);
-	cout << "Ââåäèòå êîë-âî ñäâèãîâ âïðàâî: "; cin >> number_of_shifts;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐºÐ¾Ð»-Ð²Ð¾ ÑÐ´Ð²Ð¸Ð³Ð¾Ð² Ð²Ð¿Ñ€Ð°Ð²Ð¾: "; cin >> number_of_shifts;
 	ShiftRight(arr, n, number_of_shifts);
 	Print(arr, n);
 
